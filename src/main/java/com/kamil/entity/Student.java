@@ -35,7 +35,7 @@ public class Student
     @Column(name = "PhoneNumber")
     private long phoneNumber;
     
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(optional = true, fetch = FetchType.LAZY)
     @JoinColumn(name="class_id")
     private SchoolClass schoolClass;    
 
